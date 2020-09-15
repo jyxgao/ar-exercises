@@ -31,6 +31,7 @@ ActiveRecord::Schema.define do
     t.column :mens_apparel, :boolean
     t.column :womens_apparel, :boolean
     t.timestamps null: false
+    t.column :stores_count, :integer
   end
   create_table :employees do |table|
     table.references :store
