@@ -25,7 +25,7 @@ end
 end
 
 puts "----- Revenue Less Than 1 million -----"
-@womens_stores = @womens_stores.where('annual_revenue < 1000000')
+@womens_stores = Store.where(womens_apparel: true).where('annual_revenue < ?', 1000000)
 @womens_stores.each do |store|
   puts "#{store.name} store carries women's apparel and has an annual revenue of $#{store.annual_revenue}."
 end

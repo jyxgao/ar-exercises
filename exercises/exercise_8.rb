@@ -5,14 +5,9 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
+require_relative './exercise_7'
 
-puts "Exercise 7"
+puts "Exercise 8"
 puts "----------"
 
-# puts "Enter a store name to create a new store: "
-# storename = $stdin.gets.chomp
-
-# @store7 = Store.create(name: storename)
-
-# puts @store7.errors.messages
-
+@store2.employees.create(first_name: "David", last_name: "Singh", hourly_rate: 60)
